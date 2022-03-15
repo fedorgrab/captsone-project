@@ -15,6 +15,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           cml-runner \
+          --single \
           --cloud aws \
           --cloud-region us-west \
           --cloud-type=t2.micro \
