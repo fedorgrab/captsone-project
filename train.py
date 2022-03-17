@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 
 # Generate some data
-X, y = make_classification(1000)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.35, random_state=18)
+X, y = make_classification(1500)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=18)
 
 # Fit a model
 depth = 2
