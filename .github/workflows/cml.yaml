@@ -39,5 +39,5 @@ jobs:
  
         echo "## Report from your EC2 Instance" > report.md
         cat metrics.txt >> report.md
-        cml-publish "confusion_matrix.png" --md >> report.md
+        cml-publish "training_history.png" --md >> report.md
         cml-send-comment report.md
