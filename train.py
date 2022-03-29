@@ -57,7 +57,7 @@ if __name__ == "__main__":
     )
 
     history = model.fit(
-        train_batches, epochs=10, validation_data=test_batches, validation_steps=20
+        train_batches, epochs=12, validation_data=test_batches, validation_steps=20
     )
 
     train_accuracy = history.history["accuracy"]
@@ -66,7 +66,7 @@ if __name__ == "__main__":
         [train_accuracy, valid_accuracy],
         ["orange", "blue"],
         ["train accuracy", "valid accuracy"],
-        epoch_num=10,
+        epoch_num=12,
         title="Train and validation accuracy",
     )
     evaluation = model.evaluate(test_batches)
